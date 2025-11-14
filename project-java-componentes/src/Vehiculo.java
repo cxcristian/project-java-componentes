@@ -14,6 +14,11 @@ public class Vehiculo {
     //atributos de la clase SistemaElectrico y SistemaFrenos
     private SistemaElectrico sistemaElectrico;
     private SistemaFrenos sistemaFrenos;
+    //atributos de las clases RegistroVehicular, Mantenimiento, Sensor
+    private RegistroVehicular registroVehicular;
+    private Mantenimiento mantenimiento;
+    private Sensor sensor;
+
 
 
     //añadir metodo constructor
@@ -38,6 +43,10 @@ public class Vehiculo {
     //seters de SistemaElectrico y SistemaFreanos
     public SistemaElectrico getSistemaElectrico(){return sistemaElectrico;}
     public SistemaFrenos getSistemaFrenos(){return sistemaFrenos;}
+    //geters de las clases RegistroVehicular, Mantenimiento, Sensor
+    public RegistroVehicular getRegistroVehicular(){return registroVehicular;}
+    public Mantenimiento getMantenimiento(){return mantenimiento;}
+    public Sensor getSensor(){return sensor;}
 
 
     //Todo: setters propios de la clase vehiculo
@@ -74,6 +83,15 @@ public class Vehiculo {
     public void setSistemaFrenos(SistemaFrenos sistemaFrenos){
         this.sistemaFrenos = sistemaFrenos;
     }
-
+    //seters de las clases RegistroVehicular, Mantenimiento, Sensor
+    public void setRegistroVehicular(RegistroVehicular registroVehicular){
+        this.registroVehicular = registroVehicular;
+    }
+    public void setMantenimiento(Mantenimiento mantenimiento){
+        this.mantenimiento = mantenimiento;
+    }
+    public void setSensor(Sensor sensor){
+        this.sensor = sensor;
+    }
 
 }

@@ -17,6 +17,6 @@ public class SistemaElectrico {
 
     public void setBateria(int bateria){this.bateria = bateria;}
     public void setLuces(boolean luces){this.luces = luces;}
-    public void getEstadoSensores(boolean estadoSensores){this.estadoSensores = estadoSensores;}
+    public void setEstadoSensores(boolean estadoSensores){this.estadoSensores = estadoSensores;}
 
 }

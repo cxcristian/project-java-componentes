@@ -29,4 +29,5 @@ public class Chasis {
     public void setLargo(double largo) { this.largo = largo; }
     public void setAncho(double ancho) { this.ancho = ancho; }
     public void setPeso(double peso) { this.peso = peso; }
+    public void setAlto(double alto) { this.alto = alto; }
 }   
