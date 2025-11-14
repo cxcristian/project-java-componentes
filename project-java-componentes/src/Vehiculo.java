@@ -5,7 +5,10 @@ public class Vehiculo {
     private String modelo;
     private String matricula;
     private int anio;
-    //atributos de otras clases
+    //atributos de la clase motor y transmision
+    private  Motor motor;
+    private Transmision transmision;
+
 
     //añadir metodo constructor
     public Vehiculo(String marca, String modelo, String matricula, int anio){
@@ -15,14 +18,17 @@ public class Vehiculo {
         this.anio = anio;
     }
 
-    //Todo: geters
+    //Todo: geters propios de la clase vehiculo
     public String getMarca(){ return marca;}
     public String getModelo(){ return modelo;}
     public String getMatricula(){return matricula;}
     public int getAnio(){return anio;}
+    // geters de motor y transmision
+    public Motor getMotor(){ return motor;}
+    public Transmision getTransmision(){return transmision;}
 
 
-    //Todo: setters
+    //Todo: setters propios de la clase vehiculo
     public void setMarca(String marca){
         this.marca = marca;
     }
@@ -34,6 +40,13 @@ public class Vehiculo {
     }
     public void setAnio(int anio){
         this.anio = anio;
+    }
+    //seters de motor y transmision
+    public void setMotor(Motor motor){
+        this.motor = motor;
+    }
+    public void setTransmision( Transmision transmision){
+        this.transmision = transmision;
     }
 
 
