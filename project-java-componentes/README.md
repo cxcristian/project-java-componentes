@@ -1,18 +1,41 @@
-## Getting Started
+# project-java-componentes
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Diagrama de Clases
 
-## Folder Structure
+El proyecto está estructurado alrededor de la clase `Vehiculo`, que actúa como un contenedor principal para varios componentes que representan las partes de un vehículo. La relación principal es de **Composición**, donde el `Vehiculo` "tiene" o está "compuesto por" otros objetos.
 
-The workspace contains two folders by default, where:
+### Jerarquía y Relaciones
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- **`App`**: Es la clase principal que contiene el método `main`. Su función es instanciar un objeto `Vehiculo` y todos sus componentes, configurarlos y mostrar la información. Depende de todas las demás clases.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- **`Vehiculo`**: Es la clase central del modelo.
+    - **Atributos propios**: `marca`, `modelo`, `matricula`, `anio`.
+    - **Componentes (Composición)**: Contiene una instancia de cada una de las siguientes clases:
+        - `Motor`: Representa el motor del vehículo.
+        - `Transmision`: Describe el sistema de transmisión.
+        - `Chasis`: Contiene información sobre el chasis.
+        - `Neumatico`: Representa las llantas.
+        - `SistemaFrenos`: Describe el sistema de frenos.
+        - `SistemaElectrico`: Modela el sistema eléctrico.
+        - `RegistroVehicular`: Almacena los datos de registro legal.
+        - `Mantenimiento`: Guarda el historial de mantenimiento.
+        - `Sensor`: Agrega los datos de los sensores del vehículo.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### Descripción de las Clases Componente
 
-## Dependency Management
+- **`Motor`**: Características técnicas del motor (tipo, cilindrada, potencia).
+- **`Transmision`**: Tipo de transmisión, número de marchas y tipo de tracción.
+- **`Chasis`**: Tipo de chasis, peso y dimensiones (ancho, largo, alto).
+- **`Neumatico`**: Marca, tamaño y presión de los neumáticos.
+- **`SistemaFrenos`**: Tipo de frenos, estado, si tiene ABS y número de discos.
+- **`SistemaElectrico`**: Voltaje de la batería, estado de las luces y sensores.
+- **`RegistroVehicular`**: Matrícula, propietario y fecha de registro.
+- **`Mantenimiento`**: Descripción, fecha, costo y estado de un mantenimiento.
+- **`Sensor`**: Lecturas de sensores como velocidad, temperatura, presión y nivel de combustible.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+En resumen, la clase `Vehiculo` es un agregado de todas las demás clases (excepto `App`), que modelan sus diferentes partes y aspectos. La clase `App` orquesta la creación y visualización de un objeto `Vehiculo` completo.
+
+## Capturas de pantalla
+
+![Primera captura del codigo ejecutandose](img/cap1.png)
+![Segunda captura del codigo ejecutandose](img/cap2.png)
