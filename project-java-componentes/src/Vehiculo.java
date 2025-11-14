@@ -5,12 +5,15 @@ public class Vehiculo {
     private String modelo;
     private String matricula;
     private int anio;
-    //atributos de la clase motor y transmision
+    //atributos de la clase Motor y Transmision
     private  Motor motor;
     private Transmision transmision;
-    //atributos de la clase chasis y neumatico
+    //atributos de la clase Chasis y Neumatico
     private Chasis chasis;
     private Neumatico neumatico;
+    //atributos de la clase SistemaElectrico y SistemaFrenos
+    private SistemaElectrico sistemaElectrico;
+    private SistemaFrenos sistemaFrenos;
 
 
     //añadir metodo constructor
@@ -32,6 +35,9 @@ public class Vehiculo {
     //geters de chasis y neumatico
     public Chasis getChasis(){return chasis;}
     public Neumatico getNeumatico(){return neumatico;}
+    //seters de SistemaElectrico y SistemaFreanos
+    public SistemaElectrico getSistemaElectrico(){return sistemaElectrico;}
+    public SistemaFrenos getSistemaFrenos(){return sistemaFrenos;}
 
 
     //Todo: setters propios de la clase vehiculo
@@ -60,6 +66,13 @@ public class Vehiculo {
     }
     public void setNeumatico(Neumatico neumatico){
         this.neumatico = neumatico;
+    }
+    //seters de SistemaElectrico y SistemaFrenos
+    public void setSistemaElectrico(SistemaElectrico sistemaElectrico){
+        this.sistemaElectrico = sistemaElectrico;
+    }
+    public void setSistemaFrenos(SistemaFrenos sistemaFrenos){
+        this.sistemaFrenos = sistemaFrenos;
     }
 
 
