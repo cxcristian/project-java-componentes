@@ -8,6 +8,9 @@ public class Vehiculo {
     //atributos de la clase motor y transmision
     private  Motor motor;
     private Transmision transmision;
+    //atributos de la clase chasis y neumatico
+    private Chasis chasis;
+    private Neumatico neumatico;
 
 
     //añadir metodo constructor
@@ -26,6 +29,9 @@ public class Vehiculo {
     // geters de motor y transmision
     public Motor getMotor(){ return motor;}
     public Transmision getTransmision(){return transmision;}
+    //geters de chasis y neumatico
+    public Chasis getChasis(){return chasis;}
+    public Neumatico getNeumatico(){return neumatico;}
 
 
     //Todo: setters propios de la clase vehiculo
@@ -47,6 +53,13 @@ public class Vehiculo {
     }
     public void setTransmision( Transmision transmision){
         this.transmision = transmision;
+    }
+    //setters de chasis y neumatico
+    public void setChasis(Chasis chasis){
+        this.chasis = chasis;
+    }
+    public void setNeumatico(Neumatico neumatico){
+        this.neumatico = neumatico;
     }
 
 
